@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewSortAttribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/buttonSortAscending"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSortAttribute"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSortDescending"
+        app:layout_constraintTop_toTopOf="@+id/textViewSortAttribute"
+        app:srcCompat="@drawable/ic_sort_ascending" />
+
+    <ImageView
+        android:id="@+id/buttonSortDescending"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSortAscending"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonSortAscending"
+        app:srcCompat="@drawable/ic_sort_descending" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

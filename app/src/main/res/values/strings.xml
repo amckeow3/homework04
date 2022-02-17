@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">McKeown_HW04</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+</resources>
